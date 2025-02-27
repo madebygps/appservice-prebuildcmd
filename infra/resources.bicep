@@ -13,6 +13,7 @@ resource web 'Microsoft.Web/sites@2022-03-01' = {
       linuxFxVersion: 'PYTHON|3.11'
       ftpsState: 'Disabled'
       appCommandLine: 'python3 -m gunicorn app:app -k uvicorn.workers.UvicornWorker'
+      
     }
     httpsOnly: true
   }
@@ -24,6 +25,7 @@ resource web 'Microsoft.Web/sites@2022-03-01' = {
     name: 'appsettings'
     properties: {
       SCM_DO_BUILD_DURING_DEPLOYMENT: 'true'
+      PRE_BUILD_COMMAND: 'prebuild.sh'
     }
   }
 
