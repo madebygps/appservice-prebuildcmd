@@ -170,3 +170,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 .azure
+src/.DS_Store

@@ -1,0 +1,1 @@
+source /opt/oryx/benv python=3.11.11 dynamic_install_root_dir="/tmp/oryx/platforms" && python3 -m pip install poetry && python3 -m pip install poetry-plugin-export && poetry install --no-root && poetry export --format requirements.txt --without-hashes --output requirements.txt && echo "typing-extensions>=4.12.0" >> requirements.txt

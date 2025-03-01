@@ -7,6 +7,6 @@ infra:
     provider: "bicep"
 services:
   web:
-    project: src
+    project: poetry-demo
     language: py
     host: appservice

@@ -1,2 +1,0 @@
-source /opt/oryx/benv python=3.11.11 dynamic_install_root_dir="/tmp/oryx/platforms" && python3 -m pip install uv && uv export --format requirements-txt --no-hashes --output-file requirements.txt
-#PYTHON_VERSION=$(ls -d /tmp/oryx/platforms/python/* 2>/dev/null | grep -o '[0-9]\+\.[0-9]\+\.[0-9]\+' | head -n 1) && source /opt/oryx/benv python=$PYTHON_VERSION dynamic_install_root_dir="/tmp/oryx/platforms" && python3 -m pip install uv && uv export --format requirements-txt --no-hashes --output-file requirements.txt
